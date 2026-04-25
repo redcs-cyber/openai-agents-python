@@ -367,5 +367,9 @@ validation:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/vercel-analytics.js
+  - "/_vercel/insights/script.js"
+
 watch:
   - "src/agents"
