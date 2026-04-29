@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openazv-goods-ecosystem"
+version = "0.1.0"
+description = "Enterprise-grade orchestration core for OpenAZV goods operations"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.136.1",
+  "uvicorn[standard]>=0.46.0",
+  "pydantic>=2.13.3",
+  "structlog>=25.5.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "httpx>=0.28"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

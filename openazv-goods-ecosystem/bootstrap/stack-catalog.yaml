@@ -1,0 +1,60 @@
+version: 1
+name: openazv-goods-ecosystem-stack-catalog
+
+ai_models_and_providers:
+  - name: OpenAI
+    purpose: LLM, vision, tool-calling, orchestration
+  - name: Anthropic Claude
+    purpose: General reasoning and agent workflows
+  - name: Google Gemini
+    purpose: Image/video generation and multimodal tasks
+  - name: ElevenLabs
+    purpose: TTS and voice cloning
+  - name: Whisper
+    purpose: Speech-to-text
+  - name: Suno
+    purpose: AI music generation
+
+communication_and_channels:
+  - name: Twilio
+    purpose: Voice calls, SMS, WhatsApp
+  - name: Telegram Bot API
+    purpose: Mobile command bridge and notifications
+  - name: Gmail API
+    purpose: Mail monitoring and task ingestion
+  - name: Google Calendar API
+    purpose: Scheduling and reminder flows
+
+platforms_and_integrations:
+  - name: GitHub
+    purpose: Repo, issue, PR automation
+  - name: Hugging Face
+    purpose: Model/dataset/paper discovery
+  - name: Binance
+    purpose: Trading and account queries
+  - name: Plesk
+    purpose: Domain/server automation
+  - name: WordPress
+    purpose: Publishing and temporary audio hosting
+
+runtime_and_infra:
+  - name: Python
+    purpose: Core runtime
+  - name: FastAPI
+    purpose: API layer
+  - name: Uvicorn
+    purpose: ASGI server
+  - name: Redis
+    purpose: Queue/cache/rate limit state
+  - name: PostgreSQL
+    purpose: Operational data store
+  - name: Neo4j
+    purpose: Causal graph storage
+  - name: Celery
+    purpose: Async workers
+  - name: Docker Compose
+    purpose: Local orchestration
+
+notes:
+  - This catalog is a starter inventory and can be expanded per organization policy.
+  - Some services are paid and require credentials, contracts, and legal/compliance review.
