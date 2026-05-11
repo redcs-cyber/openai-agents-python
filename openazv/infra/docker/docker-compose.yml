@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  openazv-api:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ../../:/app
+    command: bash -lc "pip install -r openazv/requirements.txt && python openazv/start_openazv.py"
+    ports:
+      - "8088:8088"
